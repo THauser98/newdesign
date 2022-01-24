@@ -1,0 +1,240 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    background: rgb(24,24, 24);
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+}
+
+.section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #ffeded;
+    font-size: 4vmin;
+    text-align: center;
+    justify-content: center;
+}
+
+section:nth-child(odd)
+{
+    justify-content: center;
+}
+
+img {
+    margin: 2%;
+    width: 4%;
+    height: auto;
+}
+
+.section h1 {
+    margin: 1%;
+}
+
+.section p {
+    font-size: 1.5vmin;
+    width: 30%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.section button {
+    margin: 1%;
+    width: 6%;
+    height: 6%;
+    background: none;
+    color: white;
+    border-width: 3px;
+    border-radius: 20px;
+    font: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.switcher{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter{
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switcher button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: black;
+    padding: 10px;
+    border: 2px solid white;
+    transition: all 2s;
+    margin: 3px;
+}
+
+.filters{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 140px;
+    height: 45px;
+    color: white;
+    background: none;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 2s;
+    margin: 3px;
+}
+
+
+
+.filters option{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    
+}
+
+
+.active{
+    border: 2px solid red !important;
+}
+
+.switcher button:hover{
+    color: gold;
+    background: rgb(24,24, 24);
+}
+
+#starter {
+    width: 10rem;
+    padding: 1rem;
+    border: white solid 0.1rem;
+    /* border: none; */
+    border-radius: 3rem;
+    background: none;
+    color: white;
+    font-size: 1.0rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    /* background-color: rgb(75, 0, 71); */
+}
+
+#starter:hover {
+    border-width: 0.15rem;
+    cursor:pointer;
+}
+
+.toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+}
+
+.state {
+    display: none;
+    position: absolute;
+    color: white;
+    right: 30px;
+    top: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    display: none;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: violet;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px violet;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .biglogo {
+    position: absolute;
+    margin: 2rem;
+    width: 15rem;
+    z-index: 3;
+    }
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap');
+    </style> 
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <section class="section">
+        <img class="logo" src="../static/elements_1c_white_var3.png">
+        <p>Lerne mit dieser interaktiven 3D-Anwendung die chemischen Elemente von einer neuen Seite kennen. Wir brechen die starre Struktur der Periodentafel auf stellen dir wichtige Eigenschaften auf neue Weise vor.</p>
+        <img src="../static/atom_white.png"/>
+        <button id="starter">Los geht's</button>
+    </section>
+    <header>
+        <img class="biglogo" src="../static/elements_1c_white.png">
+    </header>
+    <!-- Rounded switch -->
+    <div class="state">
+        <h>Grid</h>
+    </div>
+    <div class="toggle">
+        <label class="switch">
+            <input class="btn" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div> 
+    <div class="filter">
+        <select name="maingroups" id="maingroups" class="filters mg1">
+            <option value="default" selected>Maingroup</option>
+            <option value="nonmetal">Nonmetals</option>
+            <option value="noble gas">Noble Gasses</option>
+            <option value="alkali metal">Alkali Metals</option>
+            <option value="alkaline earth metal">Alkine Earth Metals</option>
+            <option value="metalloid">Metalloids</option>
+            <option value="halogen">Halogens</option>
+            <option value="transition metal">Transition Metals</option>
+        </select>
+        <select name="standardstates" id="standardstates" class="filters sts">
+            <option value="default" selected>States</option>
+            <option value="solid">Solid</option>
+            <option value="liquid">Liquid</option>
+            <option value="gas">Gas</option>
+        </select>
+        <select name="bondingtype" id="bondingtype" class="filters bt">
+            <option value="default" selected>Bondingtype</option>
+            <option value="diatomic">Diatomic</option>
+            <option value="atomic">Atomic</option>
+            <option value="metallic">Metallic</option>
+            <option value="covalent network">Covalent Network</option>
+        </select>
+    </div>
+</body>
+</html>
